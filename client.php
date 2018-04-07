@@ -23,7 +23,9 @@
 						if(isset($_POST['send'])){
 							$message= $_REQUEST['message'];					
 							$sock = socket_create(AF_INET, SOCK_STREAM, 0) or die("Could not create socket\n");
-							socket_connect($sock,$host,$port);
+							do{
+								$con=socket_connect($sock,$host,$port);
+							}while(!$con);
 							socket_write($sock, $message, strlen($message));?>
 							<div class="message1" ><h4>You: </h4><p><?php echo $message; ?></p></div>
 					<?php  
