@@ -1,0 +1,169 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	color:#eee;
+	vertical-align:baseline;
+	background:transparent;
+}
+html{
+	font-family:Helvetica, sans-serif;
+}
+.fadeInDown , .fadeInUp {
+  -vendor-animation-duration: 5s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+/*index page css*/
+.container{
+	background-image: url(../img/hero.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height:100vh;
+	width:100%;
+	overflow-y: hidden;
+	text-align:center;
+}
+
+
+
+h1{
+	font-size: 50px;
+	margin-bottom: -20px;
+	color:#e4e5e6;
+}
+p{
+	font-size: 18px;
+	margin-bottom: 30px;
+	font-weight:100;
+	margin-top: 30px;
+}
+a{
+	text-decoration: none;
+	font-size: 16px;
+	margin-left: 20px;
+	margin-right:20px;
+}
+.btnone{
+	border: #eee 2px solid;
+	border-radius:100px;
+	padding: 0.6em 1.75em;
+	margin-top:40px;
+	margin-bottom:40px;
+	transition:0.3s ease-in;
+}
+.btnone:hover{
+	background-color: #eee;
+	color:#36454f;
+	padding: 0.6em 1.75em;
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.btnone:active{
+	background-color: #eee;
+	color:#36454f;
+	padding: 0.6em 1.75em;
+	margin-top:40px;
+	margin-bottom:40px;
+}
+
+.btntwo{
+	border: #36454f 2px solid;
+	background-color: #36454f;
+	border-radius:100px;
+	padding:0.6em 1.75em;
+	text-align: center;
+}
+.btntwo:hover{
+	border: #eee 2px solid;
+	background-color: #eee;
+	color:#36454f;
+	border-radius:100px;
+	padding:0.6em 1.75em;
+	text-align: center;
+}
+
+.source{
+	margin-top:100px;
+}
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:20px;   /* Height of the footer */
+}
+.text{
+	margin-top:150px;
+}
+
+
+
+
+
+/*client-server style*/
+
+
+.infobar{
+	width:100%;
+	height:80px;
+	background-color: #36454f;
+}
+.infobar h1{
+	font-size: 40px;
+	padding-top: 15px;
+}
+.scm p{ /*client message in server*/
+ 	opacity:0.8;
+ 	margin-top: -20px;
+ 	padding-left:60px;
+}
+.ssr p{ /*server response in server*/
+ 	opacity:0.8;
+ 	margin-top: -20px;
+ 	padding-left:60px;
+}
+.chat{
+	width:50%;
+	height:100px;
+	background: #36454f;
+	border:solid 1px #eee;
+	margin: 5% 25% 0% 25%;
+	text-align:left;
+}
+.message1{
+	padding: 10 0 0 5;
+}
+.message2{
+	padding: 0 0 0 5;
+}
+.message{
+	/*margin-top:;*/
+
+}
+input{
+	border-bottom: 1px solid;
+}
+li{
+	text-decoration: none;
+	list-style: none;
+}
+@media (min-width : 320px) and (max-width : 768px) {
+	.text{
+		margin-top: 20px;
+	}
+	footer {
+	   height:40px;    Height of the footer 
+	}
+	.chat{
+		width:100%;
+		height:100px;
+		background: #36454f;
+		border: none;
+		margin:10% 0 0 0;
+		text-align:left;
+	}
+}
