@@ -1,4 +1,6 @@
 <?php 
+	$url1=$_SERVER['REQUEST_URI'];
+    	header("Refresh: 5; URL=$url1");
 	// set some variables
 	 $host = "127.0.0.1";
 	 $port = 25003;
